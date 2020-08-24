@@ -2,7 +2,7 @@
 <head>
 <title>Flight  Page</title>
 </head>
-<body>
+<body  style="background-color:#f3e0be;">
    please enter airline Name:
    <form method="get" action="/">
 <input type="text" name="airlineName"><br>
