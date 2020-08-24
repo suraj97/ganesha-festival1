@@ -4,7 +4,7 @@
 <html>
 <head>
 </head>
-<body style="background-color: lightblue;">
+<body style="background-color: #f3e0be;">
 <h1  style="margin-left:400px;">Flight Details List</h1>  
 <table border="8" width="50%" cellpadding="20" style="margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:100px;">
 	<tr>
