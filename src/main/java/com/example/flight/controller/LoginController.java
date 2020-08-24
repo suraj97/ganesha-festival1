@@ -13,10 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.flight.model.DatabaseFile;
-import com.example.flight.model.PaymentFile;
 import com.example.flight.model.User;
 import com.example.flight.service.DatabaseFileService;
-import com.example.flight.service.PaymentFileService;
 import com.example.flight.service.LoginService;
 
 @Controller
@@ -104,15 +102,23 @@ public class LoginController {
     public String showpaymentdetails(ModelMap model){
 		return "paymentdetails"; 
 	}	
-	/*@GetMapping("/dashboard")
-    public String downloadflightdetailsBydetails(ModelMap model, @RequestParam String details) {
-    	System.out.println("Entering - FileController.downloadflightDetails(String, HttpServletRequest) - details::"+details);
-        List<DatabaseFile> databaseFile = databaseFileService.downloadflightdetailsBydetails(details);
+	
+	@RequestMapping(value="/searchdetails", method = RequestMethod.GET)
+    public String showdetailsinfo(ModelMap model){
+		return "searchdetails"; 
+	}
+	@GetMapping("/history")
+    public String downloadflightdetailsBydetails(ModelMap model, @RequestParam(value = "airlineName", required = false)String airlineName) {
+    	System.out.println("Entering - FileController.downloadflightDetails(String, HttpServletRequest) - airlineName::"+airlineName);
+        List<DatabaseFile> databaseFile = databaseFileService.downloadflightdetailsByairlineName(airlineName);
         System.out.println("databaseFile - : "+databaseFile);
         model.put("databaseFile", databaseFile);
-        return "viewdetails";*/
-	@RequestMapping(value="/dashboard", method = RequestMethod.GET)
+        return "dashboard";
+	/*@RequestMapping(value="/dashboard", method = RequestMethod.GET)
 	public String showpaymentdetails1(ModelMap model){
 	return "paymentdetails"; 
-	}	
+	}*/
+	
+	}
+	
 }
