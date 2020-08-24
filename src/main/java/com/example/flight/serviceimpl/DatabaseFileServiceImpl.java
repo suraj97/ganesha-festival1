@@ -18,7 +18,7 @@ public class DatabaseFileServiceImpl implements DatabaseFileService {
 	public List<DatabaseFile> downloadflightdetailsByairlineName(String airlineName) {
 		return databaseFileRepository.findByairlineName(airlineName);
 	}	
-		/*public List<DatabaseFile> downloadflightdetailsBydetails(String details) {
-			return databaseFileRepository.findBydetails(details);
-	}*/
+			public List<DatabaseFile> downloadflightdetailsBydetails(String airlineName) {
+			return databaseFileRepository.findBydetails(airlineName);
+	}
 }
