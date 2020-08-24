@@ -7,5 +7,5 @@ import com.example.flight.model.DatabaseFile;
 public interface DatabaseFileService {
 	public List<DatabaseFile> downloadflightdetailsByairlineName(String airlineName);
 
-	/*public List<DatabaseFile> downloadflightdetailsBydetails(String details);*/
+	public List<DatabaseFile> downloadflightdetailsBydetails(String airlineName);
 }
