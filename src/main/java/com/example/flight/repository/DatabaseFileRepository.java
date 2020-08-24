@@ -14,6 +14,6 @@ public interface DatabaseFileRepository extends JpaRepository<DatabaseFile, Stri
 	
 	List<DatabaseFile> findByairlineName(String airlineName);
 
-	/*List<DatabaseFile> findBydetails(String details);*/
+	List<DatabaseFile> findBydetails(String airlineName);
 
 }
