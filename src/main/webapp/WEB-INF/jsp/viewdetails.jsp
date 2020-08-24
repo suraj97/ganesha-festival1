@@ -8,7 +8,6 @@
 <h1  style="margin-left:400px;">Flight Details List</h1>  
 <table border="8" width="50%" cellpadding="20" style="margin-left:auto;margin-right:auto;margin-top:0px;margin-bottom:100px;">
 	<tr>
-    <th id="id">ID</th>
     <th id="airlineName">Airline Name</th>
     <th id="source">Source</th>
     <th id="destination">Destination</th>
@@ -18,7 +17,6 @@
   </tr>  
    <c:forEach var="flight" items="${databaseFile}">   
    <tr>  
-   <td>${flight.id}</td>  
    <td>${flight.airlineName}</td>  
    <td>${flight.source}</td>  
    <td>${flight.destination}</td>  
