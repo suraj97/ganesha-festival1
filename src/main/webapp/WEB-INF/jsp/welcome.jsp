@@ -6,7 +6,7 @@
 <link href="css/h1.css" rel="stylesheet">
 <title>VALID USER</title>
 </head>
-<body>
+<body style="background-color: #f3e0be;">
   <h1><i>  Hello  ${username} thanks for registering to our website .</i></h1>
   <br><b><a href="./searchflightinfo">Click here to check and pay Insurance premium</a></b>
 </body>
