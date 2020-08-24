@@ -9,3 +9,14 @@
 </form>
 </body>
 </html>
+
+<html>
+<head>
+<title>Payment Details Page</title>
+</head>
+<body>
+<form method="Get" action="/searchdetails"> 
+<input type="submit"  value="Click to see payment history"/>  
+</form>
+</body>
+</html>
