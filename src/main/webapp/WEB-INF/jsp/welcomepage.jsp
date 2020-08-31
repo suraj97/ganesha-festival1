@@ -9,7 +9,7 @@
 </head>
 <body style="background-color: #f3e0be;">
  <br>
-   <h1> <marquee direction = "up">Now You can select a insurance to your flight in easy steps here</marquee></h1>
+   <h1> <marquee direction = "right">Now You can select a insurance to your flight in easy steps here</marquee></h1>
   <br>  <b><h2><a href="/login">Click here to Login</a></h2></b></br>
 </body>
 </html>
